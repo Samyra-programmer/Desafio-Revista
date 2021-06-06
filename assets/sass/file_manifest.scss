@@ -1,1 +1,17 @@
 //You can change the name in this file
+
+//Abstracts
+@import 'abstracts/mixins',
+        'abstracts/variables';
+
+//Base
+@import 'base/base',
+        'base/reset',
+        'base/typography';
+
+//componenets
+@import 'components/buttons';
+
+//layout
+@import 'layout/main',
+        'layout/grid';
