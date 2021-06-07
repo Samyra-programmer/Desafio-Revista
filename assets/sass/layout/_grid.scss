@@ -26,3 +26,13 @@
         display: none;
     }
 }
+
+
+@media screen and (min-width: $md) and (max-width: $lg) {
+
+    .main {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr;
+    }
+   
+}
