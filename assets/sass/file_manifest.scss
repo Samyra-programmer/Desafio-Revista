@@ -1,17 +1,20 @@
-//You can change the name in this file
+// @import "abstracts/functions";
+// @import "abstracts/mixins";
+// @import "abstracts/placeholders";
+@import "abstracts/variables";
 
-//Abstracts
-@import 'abstracts/mixins',
-        'abstracts/variables';
 
-//Base
-@import 'base/base',
-        'base/reset',
-        'base/typography';
+@import "base/base";
+@import "base/reset";
+@import "base/typography";
 
-//componenets
-@import 'components/buttons';
 
-//layout
-@import 'layout/main',
-        'layout/grid';
+@import "layout/navbar";
+@import "layout/main.scss";
+@import "layout/section";
+@import "layout/grid";
+@import "layout/footer";
+
+
+@import "components/buttons";
+@import "components/inputs";

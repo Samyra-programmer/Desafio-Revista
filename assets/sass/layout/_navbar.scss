@@ -1,1 +1,73 @@
 //This file is for create your style with relation on space of navbar
+.nav {
+    width: 100%;
+    padding: 10px;
+    border-bottom: 1px solid $black;
+
+    &__logo {
+        font-size: $large;
+        font-weight: $font-bold;
+        text-transform: uppercase;
+        padding-left: 20px;
+    }
+
+    &__items {
+        position: absolute;
+        right: 6%;
+        top: 15px;
+
+    }
+
+    &__input-menu {
+        font-size: 1rem;
+        padding-left: 1rem;
+        border: 2px solid #666;
+        border-radius: 30px;
+    }
+}
+
+.nav__items ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: $medium;
+    color: black;
+    border-radius: 5px;
+    padding: 0.5rem;
+}
+
+.nav__items ul{
+    padding-left: 0;
+    & li {
+    display: inline-block;
+    list-style: none;
+}
+}
+
+
+@media (max-width: $md) {
+    .nav {
+        &__items {
+            width: 50%;
+
+            li {
+                width: 25%;
+            }
+        }
+
+        &__input-menu {
+            margin-left: 2rem;
+            width: 8rem;
+            font-size: 0.8rem;
+        }
+
+    }
+
+    .nav__items ul li a {
+        font-size: 0.8rem;
+    }
+
+    .nav .nav__items li:first-child {
+        display: none;
+    }
+
+}

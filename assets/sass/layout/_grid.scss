@@ -1,0 +1,28 @@
+.container__news {
+    clear: both;
+    display: grid;
+    grid-template-columns: 700fr 220fr;
+    gap: 20px;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto 1fr;
+    gap: 25px;
+}
+
+@media (max-width: $md) {
+    .container__news {
+        grid-template-columns: 1fr;
+    }
+
+    .main {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .section {
+        display: none;
+    }
+}
